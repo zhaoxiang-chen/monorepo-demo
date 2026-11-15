@@ -4,7 +4,9 @@
   "description": "一个从零开始构建的前端工程实践项目。",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "preview": "pnpm --filter web preview",
     "check": "pnpm -r --if-present check"
   },
   "keywords": [],
