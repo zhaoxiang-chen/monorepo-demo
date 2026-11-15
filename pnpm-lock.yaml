@@ -187,6 +187,9 @@ importers:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.15.0)
+      '@monorepo-demo/ts-config':
+        specifier: workspace:*
+        version: link:../../packages/ts-config
       '@types/node':
         specifier: ^24.19.2
         version: 24.19.2
@@ -220,6 +223,8 @@ importers:
       vite:
         specifier: ^8.3.6
         version: 8.3.8(@types/node@24.19.2)
+
+  packages/ts-config: {}
 
 packages:
 

@@ -15,6 +15,7 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@monorepo-demo/ts-config": "workspace:*",
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
