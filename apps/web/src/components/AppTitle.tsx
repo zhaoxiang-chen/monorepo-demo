@@ -1,4 +1,3 @@
-
 type ApptitleProps = {
   subTitle: string
 }
@@ -6,8 +5,8 @@ type ApptitleProps = {
 export function AppTitle({ subTitle }: ApptitleProps) {
   return (
     <section>
-        <h1>monorepo-demo</h1>
-        {subTitle ? <p>{subTitle}</p> : null}
+      <h1>monorepo-demo</h1>
+      {subTitle ? <p>{subTitle}</p> : null}
     </section>
   )
 }
