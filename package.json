@@ -11,7 +11,8 @@
     "typecheck": "pnpm --filter web typecheck",
     "check": "pnpm lint && pnpm typecheck && pnpm build",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,8 @@
   "packageManager": "pnpm@12.21.0",
   "type": "module",
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
     "prettier": "^3.10.1"
   }
 }

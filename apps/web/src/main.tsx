@@ -4,7 +4,7 @@ import "./index.css"
 import App from "./App"
 
 const a = `1`
-console.log(b)
+console.log(a)
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
