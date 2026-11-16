@@ -14,6 +14,13 @@ export const router = createBrowserRouter([
         Component: HomePage,
       },
       {
+        path: "users",
+        lazy: async () => {
+          const { UserListPage } = await import("@/pages/users")
+          return { Component: UserListPage }
+        },
+      },
+      {
         Component: RequireAuth,
         children: [
           {
