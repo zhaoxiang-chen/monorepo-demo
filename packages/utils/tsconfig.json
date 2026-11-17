@@ -1,0 +1,7 @@
+{
+  "extends": "@monorepo-demo/ts-config/base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["src"]
+}

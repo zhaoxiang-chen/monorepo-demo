@@ -215,6 +215,9 @@ importers:
       '@monorepo-demo/ts-config':
         specifier: workspace:*
         version: link:../../packages/ts-config
+      '@monorepo-demo/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       '@tailwindcss/vite':
         specifier: ^4.3.5
         version: 4.3.5(vite@8.3.8(@types/node@24.19.2)(jiti@2.7.0)(yaml@2.9.1))
@@ -280,6 +283,21 @@ importers:
         version: 8.72.2(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
 
   packages/ts-config: {}
+
+  packages/utils:
+    devDependencies:
+      '@monorepo-demo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@monorepo-demo/ts-config':
+        specifier: workspace:*
+        version: link:../ts-config
+      eslint:
+        specifier: ^10.6.0
+        version: 10.15.0(jiti@2.7.0)
+      typescript:
+        specifier: ~6.0.2
+        version: 6.0.3
 
 packages:
 
