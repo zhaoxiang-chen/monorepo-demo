@@ -18,7 +18,6 @@ type ThemeProviderProps = {
 export function ThemeProvider({ children }: ThemeProviderProps) {
   // 惰性初始化：仅首次渲染时从 localStorage 读取，避免每次 render 都读存储
   const [theme, setTheme] = useState<Theme>(() => readStoredTheme())
-  console.log("~🚀 setTheme  ", setTheme)
   useEffect(() => {
     applyTheme(theme)
     window.localStorage.setItem(themeStorageKey, theme)
