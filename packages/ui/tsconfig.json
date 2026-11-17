@@ -1,0 +1,4 @@
+{
+  "extends": "@monorepo-demo/ts-config/react-app.json",
+  "include": ["src"]
+}

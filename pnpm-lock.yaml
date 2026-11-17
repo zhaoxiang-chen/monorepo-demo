@@ -215,6 +215,9 @@ importers:
       '@monorepo-demo/ts-config':
         specifier: workspace:*
         version: link:../../packages/ts-config
+      '@monorepo-demo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@monorepo-demo/utils':
         specifier: workspace:*
         version: link:../../packages/utils
@@ -283,6 +286,34 @@ importers:
         version: 8.72.2(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
 
   packages/ts-config: {}
+
+  packages/ui:
+    dependencies:
+      react:
+        specifier: ^19.2.7
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.2.7
+        version: 19.3.1(react@19.3.1)
+    devDependencies:
+      '@monorepo-demo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@monorepo-demo/ts-config':
+        specifier: workspace:*
+        version: link:../ts-config
+      '@types/react':
+        specifier: ^19.2.17
+        version: 19.3.0
+      '@types/react-dom':
+        specifier: ^19.2.3
+        version: 19.3.0(@types/react@19.3.0)
+      eslint:
+        specifier: ^10.6.0
+        version: 10.15.0(jiti@2.7.0)
+      typescript:
+        specifier: ~6.0.2
+        version: 6.0.3
 
   packages/utils:
     devDependencies:
