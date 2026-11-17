@@ -1,0 +1,10 @@
+{
+  "extends": "@monorepo-demo/ts-config/base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "outDir": "dist",
+    "rootDir": "src"
+  },
+  "include": ["src"]
+}
