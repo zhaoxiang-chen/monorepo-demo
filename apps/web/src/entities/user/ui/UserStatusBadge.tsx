@@ -1,6 +1,6 @@
 import type { UserStatus } from "../model"
 
-import { Badge } from "@/shared/ui"
+import { Badge } from "@zxchen-demo/ui"
 
 type UserStatusBadgeProps = {
   status: UserStatus

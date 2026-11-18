@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-import { PageTitle } from "@monorepo-demo/ui"
+import { PageTitle } from "@zxchen-demo/ui"
 
 export function NotFoundPage() {
   return (

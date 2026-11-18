@@ -1,5 +1,5 @@
 {
-  "extends": "@monorepo-demo/ts-config/node.json",
+  "extends": "@zxchen-demo/ts-config/node.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "types": ["node"]

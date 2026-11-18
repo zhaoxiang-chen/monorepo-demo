@@ -1,4 +1,4 @@
-# monorepo-demo
+# zxchen-demo
 
 从零搭建的前端工程管理实践项目，用 pnpm Monorepo 沉淀应用、公共包与工程规范。
 
@@ -66,18 +66,18 @@ pnpm install
 
 ### 共享包
 
-| 包名                           | 路径                     | 说明                                                |
-| ------------------------------ | ------------------------ | --------------------------------------------------- |
-| `@monorepo-demo/ui`            | `packages/ui`            | 基础组件：`Badge` / `Button` / `Card` / `PageTitle` |
-| `@monorepo-demo/utils`         | `packages/utils`         | 通用工具，例如 `readBoolean`                        |
-| `@monorepo-demo/eslint-config` | `packages/eslint-config` | 导出 `base` / `react` 配置                          |
-| `@monorepo-demo/ts-config`     | `packages/ts-config`     | 导出 `base` / `node` / `react-app` 配置             |
+| 包名                         | 路径                     | 说明                                                |
+| ---------------------------- | ------------------------ | --------------------------------------------------- |
+| `@zxchen-demo/ui`            | `packages/ui`            | 基础组件：`Badge` / `Button` / `Card` / `PageTitle` |
+| `@zxchen-demo/utils`         | `packages/utils`         | 通用工具，例如 `readBoolean`                        |
+| `@zxchen-demo/eslint-config` | `packages/eslint-config` | 导出 `base` / `react` 配置                          |
+| `@zxchen-demo/ts-config`     | `packages/ts-config`     | 导出 `base` / `node` / `react-app` 配置             |
 
 应用通过 `workspace:*` 引用内部包，例如：
 
 ```json
-"@monorepo-demo/ui": "workspace:*",
-"@monorepo-demo/utils": "workspace:*"
+"@zxchen-demo/ui": "workspace:*",
+"@zxchen-demo/utils": "workspace:*"
 ```
 
 ## 常用命令
@@ -100,8 +100,8 @@ pnpm check            # lint + typecheck + build
 
 ```bash
 pnpm --filter web dev
-pnpm --filter @monorepo-demo/ui lint
-pnpm --filter @monorepo-demo/utils typecheck
+pnpm --filter @zxchen-demo/ui lint
+pnpm --filter @zxchen-demo/utils typecheck
 ```
 
 ## 环境变量（apps/web）
@@ -125,8 +125,8 @@ VITE_ENABLE_MONITORING=false
 
 ## 工程规范
 
-- **ESLint**：应用与包复用 `@monorepo-demo/eslint-config`
-- **TypeScript**：复用 `@monorepo-demo/ts-config`
+- **ESLint**：应用与包复用 `@zxchen-demo/eslint-config`
+- **TypeScript**：复用 `@zxchen-demo/ts-config`
 - **Prettier**：根目录统一格式化
 - **Husky**
   - `pre-commit`：跑 lint-staged（ESLint fix + Prettier）
@@ -138,6 +138,20 @@ VITE_ENABLE_MONITORING=false
 feat: add user list page
 fix(web): correct staging api base url
 chore: update shared eslint config
+
+Common types according to commitlint-config-conventional (based on the Angular convention) can be:
+
+build
+chore
+ci
+docs
+feat
+fix
+perf
+refactor
+revert
+style
+test
 ```
 
 ## 路线图

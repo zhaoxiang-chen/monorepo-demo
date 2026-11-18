@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-demo/utils",
+  "name": "@zxchen-demo/utils",
   "version": "0.0.0",
   "private": false,
   "type": "module",
@@ -29,8 +29,8 @@
     "access": "public"
   },
   "devDependencies": {
-    "@monorepo-demo/eslint-config": "workspace:*",
-    "@monorepo-demo/ts-config": "workspace:*",
+    "@zxchen-demo/eslint-config": "workspace:*",
+    "@zxchen-demo/ts-config": "workspace:*",
     "eslint": "^10.6.0",
     "typescript": "~6.0.2",
     "eslint-config-prettier": "^10.1.8"

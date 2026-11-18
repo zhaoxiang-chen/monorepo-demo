@@ -1,4 +1,4 @@
-import { readBoolean } from "@monorepo-demo/utils"
+import { readBoolean } from "@zxchen-demo/utils"
 type AppEnv = "development" | "staging" | "production"
 
 type EnvConfig = {

@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-demo/eslint-config",
+  "name": "@zxchen-demo/eslint-config",
   "version": "0.0.0",
   "private": true,
   "type": "module",

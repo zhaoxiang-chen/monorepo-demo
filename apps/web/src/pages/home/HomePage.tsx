@@ -1,4 +1,4 @@
-import { Card, PageTitle } from "@monorepo-demo/ui"
+import { Card, PageTitle } from "@zxchen-demo/ui"
 
 export function HomePage() {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-demo/ts-config",
+  "name": "@zxchen-demo/ts-config",
   "version": "0.0.0",
   "private": true,
   "exports": {

@@ -1,5 +1,5 @@
 {
-  "extends": "@monorepo-demo/ts-config/base.json",
+  "extends": "@zxchen-demo/ts-config/base.json",
   "compilerOptions": {
     "declaration": true,
     "emitDeclarationOnly": false,

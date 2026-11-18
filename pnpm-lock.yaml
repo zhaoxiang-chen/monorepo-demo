@@ -186,7 +186,7 @@ importers:
         version: 9.1.7
       lint-staged:
         specifier: ^17.6.0
-        version: 17.6.0
+        version: 17.6.1
       prettier:
         specifier: ^3.10.1
         version: 3.10.1
@@ -209,18 +209,6 @@ importers:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.15.0(jiti@2.7.0))
-      '@monorepo-demo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@monorepo-demo/ts-config':
-        specifier: workspace:*
-        version: link:../../packages/ts-config
-      '@monorepo-demo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@monorepo-demo/utils':
-        specifier: workspace:*
-        version: link:../../packages/utils
       '@tailwindcss/vite':
         specifier: ^4.3.5
         version: 4.3.5(vite@8.3.8(@types/node@24.19.2)(jiti@2.7.0)(yaml@2.9.1))
@@ -236,6 +224,18 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^6.1.2
         version: 6.3.0(vite@8.3.8(@types/node@24.19.2)(jiti@2.7.0)(yaml@2.9.1))
+      '@zxchen-demo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@zxchen-demo/ts-config':
+        specifier: workspace:*
+        version: link:../../packages/ts-config
+      '@zxchen-demo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      '@zxchen-demo/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       eslint:
         specifier: ^10.14.0
         version: 10.15.0(jiti@2.7.0)
@@ -244,7 +244,7 @@ importers:
         version: 7.1.1(eslint@10.15.0(jiti@2.7.0))
       eslint-plugin-react-refresh:
         specifier: ^0.5.7
-        version: 0.5.7(eslint@10.15.0(jiti@2.7.0))
+        version: 0.5.8(eslint@10.15.0(jiti@2.7.0))
       globals:
         specifier: ^17.13.0
         version: 17.14.0
@@ -277,7 +277,7 @@ importers:
         version: 7.1.1(eslint@10.15.0(jiti@2.7.0))
       eslint-plugin-react-refresh:
         specifier: ^0.5.3
-        version: 0.5.7(eslint@10.15.0(jiti@2.7.0))
+        version: 0.5.8(eslint@10.15.0(jiti@2.7.0))
       globals:
         specifier: ^17.6.0
         version: 17.14.0
@@ -296,18 +296,18 @@ importers:
         specifier: ^19.2.7
         version: 19.3.1(react@19.3.1)
     devDependencies:
-      '@monorepo-demo/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
-      '@monorepo-demo/ts-config':
-        specifier: workspace:*
-        version: link:../ts-config
       '@types/react':
         specifier: ^19.2.17
         version: 19.3.0
       '@types/react-dom':
         specifier: ^19.2.3
         version: 19.3.0(@types/react@19.3.0)
+      '@zxchen-demo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@zxchen-demo/ts-config':
+        specifier: workspace:*
+        version: link:../ts-config
       eslint:
         specifier: ^10.6.0
         version: 10.15.0(jiti@2.7.0)
@@ -317,10 +317,10 @@ importers:
 
   packages/utils:
     devDependencies:
-      '@monorepo-demo/eslint-config':
+      '@zxchen-demo/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@monorepo-demo/ts-config':
+      '@zxchen-demo/ts-config':
         specifier: workspace:*
         version: link:../ts-config
       eslint:
@@ -819,8 +819,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@tybys/wasm-util@0.10.4':
-    resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
+  '@tybys/wasm-util@0.10.5':
+    resolution: {integrity: sha512-dOGOPxlaNV+G046mZzN+9C0dAcQZeSKcXiVaM0TYy/LM4ttTmgSBDxYfovcYI8Em3+eAbiAYpvWLOv8+ZVRJKA==}
 
   '@types/esrecurse@4.3.1':
     resolution: {integrity: sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==}
@@ -1071,8 +1071,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0
 
-  eslint-plugin-react-refresh@0.5.7:
-    resolution: {integrity: sha512-XhJSzLljuYD4UjNuFGJu2v7aD3sqNVK12w5/DCUfrNfHWegZo2+TsavNx8MuxMwEquuFAzNbNfXKU0WoZ+YUIg==}
+  eslint-plugin-react-refresh@0.5.8:
+    resolution: {integrity: sha512-VYgz1iCC5LxeAd6YRz5ATfg8WKrNb1ulHMpCe4pQpn3CS9DiYpZi5wcag73O8iChLhrl/CmlGMmzA6eXZ2cX4Q==}
     peerDependencies:
       eslint: ^9 || ^10
 
@@ -1360,8 +1360,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  lint-staged@17.6.0:
-    resolution: {integrity: sha512-nOhBfYkZEwkFtNzD5pK9s9LkcWoxJ+whLzEnhqi9nl7zTB5n7tg8+9iYgMGx2Wm3VlLu8cbNj0RACzY+nWi5iQ==}
+  lint-staged@17.6.1:
+    resolution: {integrity: sha512-3MXgVN7BERDR/6CXZs2fDHGc+r0+hlvGAa9wqMlVbIS6RVRuaPOnb5SnN6wMXulwfEy9DXVkMVUN/8cUlpPDnw==}
     engines: {node: '>=22.22.1'}
     hasBin: true
 
@@ -1520,9 +1520,9 @@ packages:
     resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
     engines: {node: '>=0.10.0'}
 
-  string-argv@0.3.2:
-    resolution: {integrity: sha512-aqD2Q0144Z+/RqG52NeHEkZauTAUWJO8c6yTftGJKO3Tja5tUgIfmIl6kExvhtxSDP7fXB6DvzkfMpCd/F3G+Q==}
-    engines: {node: '>=0.6.19'}
+  string-argv@0.4.0:
+    resolution: {integrity: sha512-UOtaksJ3SK3KLHba2i9I27fvuZNfBlImDP5wKsCOxCDMRDNxlipCe8rmnUAaDpqlQ93upnA0SzF2pjWhttozSA==}
+    engines: {node: '>=16.20.0'}
 
   string-width@7.2.0:
     resolution: {integrity: sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==}
@@ -2011,7 +2011,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 2.0.0-beta.2
       '@emnapi/runtime': 2.0.0-beta.2
-      '@tybys/wasm-util': 0.10.4
+      '@tybys/wasm-util': 0.10.5
     optional: true
 
   '@oxc-project/types@0.156.0': {}
@@ -2155,7 +2155,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.3.0
 
-  '@tybys/wasm-util@0.10.4':
+  '@tybys/wasm-util@0.10.5':
     dependencies:
       tslib: 2.9.1
     optional: true
@@ -2414,7 +2414,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-react-refresh@0.5.7(eslint@10.15.0(jiti@2.7.0)):
+  eslint-plugin-react-refresh@0.5.8(eslint@10.15.0(jiti@2.7.0)):
     dependencies:
       eslint: 10.15.0(jiti@2.7.0)
 
@@ -2655,10 +2655,10 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  lint-staged@17.6.0:
+  lint-staged@17.6.1:
     dependencies:
       picomatch: 4.0.7
-      string-argv: 0.3.2
+      string-argv: 0.4.0
       tinyexec: 1.3.1
     optionalDependencies:
       yaml: 2.9.1
@@ -2803,7 +2803,7 @@ snapshots:
 
   source-map-js@1.2.2: {}
 
-  string-argv@0.3.2: {}
+  string-argv@0.4.0: {}
 
   string-width@7.2.0:
     dependencies:
