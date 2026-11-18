@@ -15,7 +15,11 @@
     "lint": "pnpm -r --if-present run lint",
     "typecheck": "pnpm -r --if-present run typecheck",
     "prepare": "husky",
-    "publish:utils": "pnpm --filter @zxchen-demo/utils publish --no-git-checks"
+    "publish:utils": "pnpm --filter @zxchen-demo/utils publish --no-git-checks",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "story": "pnpm --filter @zxchen-demo/ui storybook"
   },
   "keywords": [],
   "author": "",
