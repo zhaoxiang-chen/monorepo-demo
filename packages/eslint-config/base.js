@@ -7,5 +7,5 @@ export default defineConfig([
   js.configs.recommended,
   tseslint.configs.recommended,
   eslintConfigPrettier,
-  globalIgnores(["dist", "node_modules", "dist-ssr"]),
+  globalIgnores(["dist", "node_modules", "dist-ssr", "storybook-static"]),
 ])

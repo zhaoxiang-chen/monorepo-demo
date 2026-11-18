@@ -1,10 +1,11 @@
 {
-  "extends": "@zxchen-demo/ts-config/base.json",
+  "extends": "@zxchen-demo/ts-config/react-app.json",
   "compilerOptions": {
     "declaration": true,
-    "emitDeclarationOnly": false,
+    "emitDeclarationOnly": true,
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/**/*.stories.tsx", "src/**/*.stories.ts"]
 }
