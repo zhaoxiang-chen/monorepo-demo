@@ -7,13 +7,15 @@
     "dev": "pnpm --filter web dev",
     "build": "pnpm --filter web build",
     "build:staging": "pnpm --filter web build:staging",
+    "build:utils": "pnpm --filter @zxchen-demo/utils build",
     "preview": "pnpm --filter web preview",
     "check": "pnpm lint && pnpm typecheck && pnpm build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "pnpm -r --if-present run lint",
     "typecheck": "pnpm -r --if-present run typecheck",
-    "prepare": "husky"
+    "prepare": "husky",
+    "publish:utils": "pnpm --filter @zxchen-demo/utils publish --no-git-checks"
   },
   "keywords": [],
   "author": "",
