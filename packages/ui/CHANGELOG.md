@@ -1,5 +1,11 @@
 # @zxchen-demo/ui
 
+## 0.0.2
+
+### Patch Changes
+
+- 46239f2: 整理项目代码结构
+
 ## 0.0.1
 
 ### Patch Changes
