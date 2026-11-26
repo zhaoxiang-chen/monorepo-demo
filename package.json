@@ -22,8 +22,9 @@
     "release": "changeset publish",
     "story": "pnpm --filter @zxchen-demo/ui storybook",
     "test:unit": "pnpm -r --if-present run test:unit",
+    "test:component": "pnpm -r --if-present run test:component",
     "test:unit:coverage": "pnpm -r --if-present run test:unit:coverage",
-    "check": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm build"
+    "check": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm test:component && pnpm build"
   },
   "keywords": [],
   "author": "",
@@ -35,11 +36,11 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.21.0",
+      "version": "12.23.0",
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.21.0",
+  "packageManager": "pnpm@12.23.0",
   "type": "module",
   "devDependencies": {
     "@changesets/cli": "^3.0.3",
