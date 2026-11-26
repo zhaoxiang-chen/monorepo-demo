@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "build:staging": "tsc -b && vite build --mode staging",
+    "pretest:integration": "pnpm --filter @zxchen-demo/ui build",
+    "test:integration": "vitest run --config vitest.config.ts",
+    "test:integration:watch": "vitest --config vitest.config.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc -b"
@@ -19,22 +22,28 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@zxchen-demo/eslint-config": "workspace:*",
-    "@zxchen-demo/ts-config": "workspace:*",
-    "@zxchen-demo/utils": "workspace:*",
-    "@zxchen-demo/ui": "workspace:*",
     "@tailwindcss/vite": "^4.3.5",
+    "@testing-library/jest-dom": "catalog:",
+    "@testing-library/react": "catalog:",
+    "@testing-library/user-event": "catalog:",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "@zxchen-demo/eslint-config": "workspace:*",
+    "@zxchen-demo/ts-config": "workspace:*",
+    "@zxchen-demo/ui": "workspace:*",
+    "@zxchen-demo/utils": "workspace:*",
     "eslint": "^10.14.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^17.13.0",
+    "jsdom": "catalog:",
+    "msw": "^3.0.7",
     "tailwindcss": "^4.3.5",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.72.1",
-    "vite": "^8.3.6"
+    "vite": "^8.3.6",
+    "vitest": "catalog:"
   }
 }

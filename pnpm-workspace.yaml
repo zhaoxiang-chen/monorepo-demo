@@ -3,5 +3,10 @@ packages:
   - "packages/*"
 allowBuilds:
   esbuild: false
+  msw: true
 catalog:
   vitest: ^5.1.0
+  jsdom: ^31.0.1
+  "@testing-library/jest-dom": ^8.0.0
+  "@testing-library/react": ^16.3.3
+  "@testing-library/user-event": ^14.6.13

@@ -23,8 +23,9 @@
     "story": "pnpm --filter @zxchen-demo/ui storybook",
     "test:unit": "pnpm -r --if-present run test:unit",
     "test:component": "pnpm -r --if-present run test:component",
+    "test:integration": "pnpm -r --if-present run test:integration",
     "test:unit:coverage": "pnpm -r --if-present run test:unit:coverage",
-    "check": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm test:component && pnpm build"
+    "check": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm test:component  && pnpm test:integration && pnpm build"
   },
   "keywords": [],
   "author": "",
