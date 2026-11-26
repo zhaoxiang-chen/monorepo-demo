@@ -10,7 +10,6 @@
     "build:utils": "pnpm --filter @zxchen-demo/utils build",
     "build:ui": "pnpm --filter @zxchen-demo/ui build",
     "preview": "pnpm --filter web preview",
-    "check": "pnpm lint && pnpm typecheck && pnpm build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "pnpm -r --if-present run lint",
@@ -21,7 +20,10 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "changeset publish",
-    "story": "pnpm --filter @zxchen-demo/ui storybook"
+    "story": "pnpm --filter @zxchen-demo/ui storybook",
+    "test:unit": "pnpm -r --if-present run test:unit",
+    "test:unit:coverage": "pnpm -r --if-present run test:unit:coverage",
+    "check": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm build"
   },
   "keywords": [],
   "author": "",

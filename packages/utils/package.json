@@ -22,17 +22,22 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "pack:check": "npm pack --dry-run",
-    "prepublishOnly": "pnpm lint && pnpm typecheck && pnpm build && pnpm pack:check"
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "test:unit:coverage": "vitest run --coverage",
+    "prepublishOnly": "pnpm lint && pnpm typecheck && pnpm test:unit && pnpm build && pnpm pack:check"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "^5.1.0",
     "@zxchen-demo/eslint-config": "workspace:*",
     "@zxchen-demo/ts-config": "workspace:*",
     "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
     "typescript": "~6.0.2",
-    "eslint-config-prettier": "^10.1.8"
+    "vitest": "^5.1.0"
   }
 }
