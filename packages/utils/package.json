@@ -32,7 +32,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^5.1.0",
+    "@vitest/coverage-v8": "^5.1.1",
     "@zxchen-demo/eslint-config": "workspace:*",
     "@zxchen-demo/ts-config": "workspace:*",
     "eslint": "^10.6.0",

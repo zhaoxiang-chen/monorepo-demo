@@ -24,3 +24,5 @@ lerna-debug.log*
 *storybook.log
 storybook-static
 coverage
+playwright-report/
+test-results/
