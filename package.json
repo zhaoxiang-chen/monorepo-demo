@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "pnpm --filter web dev",
     "build": "pnpm --filter web build",
+    "build:dependencies": "pnpm --filter @zxchen-demo/utils build && pnpm --filter @zxchen-demo/ui build",
+    "build:deploy": "pnpm build:dependencies && pnpm build",
     "build:staging": "pnpm --filter web build:staging",
     "build:utils": "pnpm --filter @zxchen-demo/utils build",
     "build:ui": "pnpm --filter @zxchen-demo/ui build",
@@ -29,7 +31,6 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:report": "playwright show-report",
-    "build:dependencies": "pnpm --filter @zxchen-demo/utils build && pnpm --filter @zxchen-demo/ui build",
     "check": "pnpm build:dependencies && pnpm lint && pnpm typecheck && pnpm test:unit && pnpm test:component  && pnpm test:integration && pnpm build"
   },
   "keywords": [],
